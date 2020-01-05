@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+    <VersionPrefix>2.1.2</VersionPrefix>
+    <Product>Migratable.PostgresProvider</Product>
+    <Company>K Cartlidge</Company>
+    <Title>Migratable.PostgresProvider</Title>
+    <Authors>K Cartlidge</Authors>
+    <Description>Database provider for kcartlidge/migratable adding support for Postgres</Description>
+    <Copyright>K Cartlidge</Copyright>
+    <PackageLicenceUrl>https://opensource.org/licenses/MIT</PackageLicenceUrl>
+    <PackageProjectUrl>https://github.com/kcartlidge/migratable.postgresprovider</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>migratable,postgres,migrations,database,dotnet core</PackageTags>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/kcartlidge/migratable.postgresprovider</RepositoryUrl>
+    <Summary>Database provider for kcartlidge/migratable adding support for Postgres.</Summary>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Migratable" Version="2.1.0" />
+    <PackageReference Include="Npgsql" Version="4.1.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;http://apiint.nugettest.org/v3/index.json</RestoreSources>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>
